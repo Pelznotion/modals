@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>modals</title>
+  </head>
+  <body>
+    <button type="button" class="share-btn"></button>
+    <dialog class="copy-link-dialog">
+      <form>
+        <header>
+          <h2>Share the link</h2>
+          <button type="button" class="close-btn secndary"></button>
+        </header>
+        <div class="copy-link-dialog__content">
+          <div class="copy-link-wrapper">
+            <input
+              type="text"
+              id="copy-link-input"
+              required
+              value="https://example.com/share-this"
+              readonly
+            />
+            <button type="button" class="copy-btn">
+              <span id="copy-text">Copy Link </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+    <script src="index.js"></script>
+  </body>
+</html>
